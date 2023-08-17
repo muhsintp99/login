@@ -1,0 +1,154 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+    /* font-family: "poping" sans-serif; */
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    /* background: url(https://media.istockphoto.com/id/1303583671/photo/cup-glass-of-coffee-with-smoke-and-coffee-beans-on-old-wooden-background.jpg?s=612x612&w=0&k=20&c=fAh3m6Hqxz-qeA45Tj2jGARhRiGFhgm80dLVthnvlD8=) no-repeat; */
+
+    /* background-size: cover; */
+    /* background-position: center; */
+}
+header
+{
+    position: fixed;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    padding: 8px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+/* .logo
+{
+    font-size: 2em;
+    color: white;
+    user-select: none;
+} */
+.logo{
+    height: 50px;
+    width: 50px;
+}
+.navigation a {
+    position: relative;
+
+font-size: 1.1em;
+color: #ffff;
+text-decoration: none;
+font-weight: 500;
+margin-left: 40px;
+}
+
+.navigation a::after{
+content: '';
+position: absolute;
+left: 0;
+bottom: -6px;
+width: 100px;
+height: 3px;
+background: #ffff;
+border-radius: 5px;
+transform: scaleX(0);
+transition: transform .5s;
+}
+
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+
+}
+
+
+.navigation .btnlogin{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #ffff;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: 0.5s;
+}
+.navigation .btnlogin:hover{
+    background: #ffff;
+    color: #162938;
+   color: #ffff;
+    font-weight: 500;
+    margin: 40px;
+    transition: 0.5s;
+}
+.navigation .btnlogin:hover{
+    background: #ffff;
+    color: #162938;
+}
+
+ .wrapper{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center; 
+     align-items: center; 
+ }
+
+
+
+.wrapper .from-box{
+    width: 100px;
+    padding: 40px;
+}
+.from-box h2{
+    font-size: 2em;
+    color: #ffff;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid black;
+    margin: 30px 0;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: black;
+    pointer-events: none;
+    transition: .5s;
+}
+
+
+.input-box input:focus 
+
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.input-box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: black;
+    line-height: 57px;
+
+}
